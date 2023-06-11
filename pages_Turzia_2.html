@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>EUROMetrs</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css"/>
+
+	<style type="text/css" style="display: block;">
+		#map {
+			height: 350px;
+		}
+	</style>
+	
+</head>
+<body>
+
+	<div class="popup__container">
+		<div class="popup__ready" onclick="close__popup()"></div>
+		<div class="popup__video__container">
+			<div class="popup__video">
+				<div class="close__popup__button" onclick="close__popup()">✖</div>
+				<iframe width="900" height="508" src="https://www.youtube.com/embed/OQRvkQDg12w" title="YouTube video player" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup__first__photo__container">
+		<div class="popup__ready" onclick="close__popup__second()"></div>
+		<div class="popup__photo__container">
+			<div class="popup__photo">
+				<div class="close__popup__button" onclick="close__popup__second()">✖</div>
+				<img src="./img/single-list-slider/3.jpg" alt="" style="max-width: 100%;margin: 0px 10px;">
+			</div>
+		</div>
+	</div>
+
+	<div class="popup__second__photo__container">
+		<div class="popup__ready" onclick="close__popup__thrid()"></div>
+		<div class="popup__photo__container">
+			<div class="popup__photo">
+				<div class="close__popup__button" onclick="close__popup__thrid()">✖</div>
+				<img src="./img/single-list-slider/4.jpg" alt="" style="max-width: 100%;margin: 0px 10px;">
+			</div>
+		</div>
+	</div>
+
+	<div class="popup__thrid__photo__container">
+		<div class="popup__ready" onclick="close__popup__fourth()"></div>
+		<div class="popup__photo__container">
+			<div class="popup__photo">
+				<div class="close__popup__button" onclick="close__popup__fourth()">✖</div>
+				<img src="./img/single-list-slider/5.jpg" alt="" style="max-width: 100%;margin: 0px 10px;">
+			</div>
+		</div>
+	</div>
+
+	<section class="first__section" style="background: url(./img/page-top-bg.jpg) no-repeat center; background-size: cover; height: 350px;">
+		<header class="header">
+			<div class="header-top">
+			<div class="header__container__first">
+				<div class="header__top__left">
+					<div class="top__info">
+						<i class="site__icons phone__icons"></i>8 (845) 298-86-48
+					</div>
+					<div class="top__info">
+						<i class="site__icons email__icons"></i>eurometers64@gmail.com	
+					</div>
+				</div>
+				<div class="header__top__right">
+					<div class="top__social">
+						<a href="#"><i class="site__icons twitter__icons"></i></a>
+						<a href="#"><i class="site__icons instagram__icons"></i></a>
+					</div>
+					<div class="user-panel">
+						<a href="#"><i class="site__icons user__icons"></i>Регистрация</a>
+						<a href="#"><i class="site__icons login__icons"></i>Авторизация</a>
+					</div>
+				</div>
+			</div>
+			</div>
+			<div class="header-bottom">
+				<div class="header__container__second">
+					<a href="index.html" class="logo"><img src="./img/logo.png" alt="" class="logo__img"></a>
+					<ul class="menu">
+						<a href="index.html"><li class="menu__item">Главная</li></a>
+						<a href="featured__listings.html"><li class="menu__item">Рекомендуемый список</li></a>
+						<a href="about__us.html"><li class="menu__item">О нас</li></a>
+						<a href="pages.html"><li class="menu__item">Страницы</li></a>
+						<a href="blog.html"><li class="menu__item">Блог</li></a>
+						<a href="contact.html"><li class="menu__item">Контакты</li></a>
+					</ul>
+					<div class="close__menu__button" onclick="open__on__menu()"><i class="site__icons bur__icons"></i></div>
+					<div class="menu__container">
+						<ul class="menu__list" style="height: 0px !important;">
+							<a href="index.html"><li class="menu__list__item">Главная</li></a>
+							<a href="featured__listings.html"><li class="menu__list__item">Рекомендуемый список</li></a>
+							<a href="about__us.html"><li class="menu__list__item">О нас</li></a>
+							<a href="pages.html"><li class="menu__list__item">Страницы</li></a>
+							<a href="blog.html"><li class="menu__list__item">Блог</li></a>
+							<a href="contact.html"><li class="menu__list__item">Контакты</li></a>
+						  </ul>
+					  </div>
+				</div>
+			</div>
+		</header>
+		<div class="information__first__section__other__pages">
+			<div class="container__text__first__section">
+				<h1 class="title__first__section">Страницы</h1>
+			</div>
+		</div>
+		</section>
+		<section class="second__section__pages">
+		<div class="site__navigation__pages">
+			<a href="index.html" class="site__navigation__item__first"><i class="site__icons home__icons"></i>Главная</a>
+			<div class="site__navigation__item__second"><i class="site__icons angle__right__icons"></i>Страницы</div>
+		</div>
+		<div class="container__rows__second__section__pages">
+			<div class="main__bar__container">
+				<div class="photo__galary__product">
+					<div class="photo__product__pages__turzia__chernomorsk__container">
+						<div class="for__sale">Продаётся</div>
+					  </div>
+					  <div class="photo__bur">
+						<div class="photo__bur__item" onclick="open__first__photo__popup__second()"><div class="photo__product__pages__turzia__chernomorsk__item__first"></div></div>
+						<div class="photo__bur__item" onclick="open__first__photo__popup__thrid()"><div class="photo__product__pages__turzia__chernomorsk__item__second"></div></div>
+						<div class="photo__bur__item" onclick="open__first__photo__popup__fourth()"><div class="photo__product__pages__turzia__chernomorsk__item__thrid"></div></div>
+					  </div>
+				</div>
+			<div class="main__bar__item">
+				<div class="info__product__container">
+					<div class="location__of__futured__container__product__page"><i class="site__icons location__icons location__icons__product__pages"></i><h2 class="location__product__pages">Турция, Черноморский регион, Tevfik Ileri Caddesi</h2></div>
+					<a href="#" class="product__price__container"><div class="product__price">3 000 000 руб.</div></a>
+				</div>
+				<div class="property__details__container">
+					<h2 class="property__details__title">Подробная информация о недвижимости</h2>
+					<div class="property__details__list__container">
+						<ul class="property__details__list">
+							<li class="property__details__item"><i class="site__icons square__icons"></i>69 м²</li>
+							<li class="property__details__item"><i class="site__icons bedrooms__icons"></i>2 спальных комнаты</li>
+							<li class="property__details__item"><i class="site__icons owner__icons"></i>Джина Уэсли</li>
+						</ul>
+						<ul class="property__details__list">
+							<li class="property__details__item"><i class="site__icons garages__icons"></i>1 гараж</li>
+							<li class="property__details__item"><i class="site__icons villa__icons"></i>Семейная квартира</li>
+							<li class="property__details__item"><i class="site__icons time__icons"></i>1 день назад</li>
+						</ul>
+						<ul class="property__details__list">
+							<li class="property__details__item"><i class="site__icons bathrooms__icons"></i>1 ванная комната</li>
+							<li class="property__details__item"><i class="site__icons trophy__icons"></i>Современная постройка</li>
+						</ul>
+					</div>
+				</div>
+				<div class="description__container">
+					<h2 class="description__title">Описание</h2>
+					<p class="description__text">Новая резиденция с бассейном и ресторанами рядом с аэропортом, Стамбул, Турция. <br>
+
+						Резиденция располагает крытым бассейном, трехуровневой парковкой, фитнес-центром, кафе и ресторанами. <br>
+						
+						Окончание строительства — декабрь 2024 года.
+						Расположение и объекты поблизости. <br>
+						
+						Недвижимость находится рядом с парком. <br>
+						
+						Торговый центр — 3,7 км<br>
+						Аэропорт — 3,5 км<br>
+						Больница — 2 км<br>
+					</p>
+				</div>
+				<div class="property__details__container">
+					<h2 class="property__details__title">Подробная информация о недвижимости</h2>
+					<div class="property__details__list__container">
+						<ul class="property__details__list">
+							<li class="property__details__item"><i class="site__icons pin__icons"></i>Кондиционер</li>
+							<li class="property__details__item"><i class="site__icons pin__icons"></i>Интернет</li>
+							<li class="property__details__item"><i class="site__icons pin__icons"></i>Телефон</li>
+						</ul>
+						<ul class="property__details__list">
+							<li class="property__details__item"><i class="site__icons pin__icons"></i>Центральное отопление</li>
+							<li class="property__details__item"><i class="site__icons pin__icons"></i>Прачечная</li>
+							<li class="property__details__item"><i class="site__icons pin__icons"></i>Вид на город</li>
+						</ul>
+						<ul class="property__details__list">
+							<li class="property__details__item"><i class="site__icons pin__icons"></i>Центральное метро</li>
+							<li class="property__details__item"><i class="site__icons pin__icons"></i>Электрическая плита</li>
+							<li class="property__details__item"><i class="site__icons pin__icons"></i>Красивый интерьер</li>
+						</ul>
+					</div>
+				</div>
+				<div class="floorplans__container">
+			<h2 class="floorplans__title border__none">Планы этажей</h2>
+			<div class="floorplans__item">
+				<div class="floorplans__item__text__information__first" onclick="open__scheme__first()">Первый этаж:<span class="square__floorplans__item">74 м²</span><i class="site__icons down__arrow__icons down__arrow__icons__animation__first"></i></div>
+					<div class="floorplans__container__scheme__first" style="max-width: 688px;"><img src="./img/plan-sketch.jpg" alt="" class="floorplans__item__scheme__first" style="height: 100%;display: block;"></div>
+			</div>
+			<div class="floorplans__item">
+				<div class="floorplans__item__text__information__second" onclick="open__scheme__second()">Первый этаж:<span class="square__floorplans__item">70 м²</span><i class="site__icons down__arrow__icons down__arrow__icons__animation__second"></i></div>
+				<div class="floorplans__container__scheme__first" style="max-width: 688px;"><img src="./img/plan-sketch.jpg" alt="" class="floorplans__item__scheme__second" style="height: 0px;display: block;"></div>
+			</div>
+			<div class="floorplans__item">
+				<div class="floorplans__item__text__information__thrid border__yes" onclick="open__scheme__thrid()">Первый этаж:<span class="square__floorplans__item">65 м²</span><i class="site__icons down__arrow__icons down__arrow__icons__animation__thrid"></i></div>
+				<div class="floorplans__container__scheme__first" style="max-width: 688px;"><img src="./img/plan-sketch.jpg" alt="" class="floorplans__item__scheme__thrid" style="height: 0px;display: block;"></div>
+			</div>
+		</div>
+		<div class="video__container">
+			<div class="video__title border__none">Видео</div>
+			<div class="video__content">
+				<div class="play__stop__button" onclick="open__popup()">
+					<img src="./img/video-btn.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="map__container">
+			<div class="map__title border__none">Локация</div>
+			<div id="map"></div>
+		</div>
+			</div>
+			</div>
+			<div class="side__bar__contant">
+				<div class="side__bar__item">
+					<div class="autor__card__container">
+						<div class="autor__information__container">
+							<div class="avatar__autor__card__container"><div class="avatar__autor__card" style="background: url(./img/author.jpg) no-repeat top center;background-size: cover;"></div></div>
+							<div class="autor__information">
+								<h2 class="name__autor__card">Виктория Ветрова</h2>
+								<div class="profession__autor__card">Агент по недвижимости</div>
+							</div>
+						</div>
+						<div class="autor__contact__information">
+							<div class="autor__card__phone"><i class="site__icons phone__icons autor__card__phone__icons"></i>(567) 666 121 2243</div>
+							<div class="autor__card__email"><i class="site__icons email__icons autor__card__email__icons"></i>sashagordon@gmail.com</div>
+						</div>
+					</div>
+					<div class="form__card__container">
+						<h2 class="form__card__title">У вас есть какие-либо вопросы?</h2>
+						<form class="form__card">
+							<div class="form__card__grid__container">
+								<div class="form__card__information__grid__item"><input type="text" name="name" placeholder="Ваше имя..."></div>
+								<div class="form__card__information__grid__item"><input type="text" name="email" placeholder="Ваша почта..."></div>
+								<div class="form__card__message__grid__item"><textarea name="message" placeholder="Ваше сообщение"></textarea></div>
+							</div>
+							<button class="send__card__button">Отправить</button>
+						</form>
+					</div>
+					<div class="related__property__container">
+						<h2 class="related__property__title">Сопутствующее имущество</h2>
+						<div class="pages__grid__container__property">
+							<div class="grid__item__pages">
+							  <div class="picture__fetured__first__page">
+								<div class="for__sale">Продаётся</div>
+							  </div>
+							  <div class="futured__text__container border__none">
+							  <div class="information__pages__container__text__center">
+										<div class="location__of__futured__container"><i class="site__icons location__icons location__icons__pages"></i><h2 class="location__pages">Турция, Мраморноморский регион</h2></div>
+									</div>
+							  <a href="#"><div class="room__price">5 000 000 руб.</div></a>
+							  </div>
+							</div>
+							<div class="grid__item__pages">
+							  <div class="picture__fetured__second__page">
+								<div class="for__sale">Продаётся</div>
+							  </div>
+							  <div class="futured__text__container border__none">
+							  <div class="information__pages__container__text__center">
+										<div class="location__of__futured__container"><i class="site__icons location__icons location__icons__pages"></i><h2 class="location__pages">Турция, Черноморский регион</h2></div>
+									</div>
+							  <a href="#"><div class="room__price">3 000 000 руб.</div></a>
+							  </div>
+							</div>
+							<div class="grid__item__pages">
+							  <div class="picture__fetured__third__page">
+								<div class="for__rent">Сдается в аренду</div>
+							  </div>
+							  <div class="futured__text__container border__none">
+							  <div class="information__pages__container__text__center">
+										<div class="location__of__futured__container"><i class="site__icons location__icons location__icons__pages"></i><h2 class="location__pages">Турция, Мраморноморский регион</h2></div>
+									</div>
+							  <a href="#"><div class="room__price">40 000 руб/месяц</div></a>
+							  </div>
+							</div>
+							<div class="grid__item__pages">
+							  <div class="picture__fetured__fourth__page">
+								<div class="for__sale">Продаётся</div>
+							  </div>
+							  <div class="futured__text__container border__none">
+							  <div class="information__pages__container__text__center">
+										<div class="location__of__futured__container"><i class="site__icons location__icons location__icons__pages"></i><h2 class="location__pages">28 Квакер-Ридж-роуд, Манхассет</h2></div>
+									</div>
+							  <a href="#"><div class="room__price">$5,600,000</div></a>
+							  </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</section>                          
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__column__container">
+					<div class="footer_column">
+						<a href="index.html"><img src="./img/logo.png" alt="" class="logo__img__footer"></a>
+						<div class="footer__social">
+							<a href="#"><i class="site__icons facebook__icons"></i></a>
+							<a href="#"><i class="site__icons twitter__icons"></i></a>
+							<a href="#"><i class="site__icons instagram__icons"></i></a>
+							<a href="#"><i class="site__icons pinterest__icons"></i></a>
+							<a href="#"><i class="site__icons linkedin__icons"></i></a>
+						</div>
+					</div>
+					<div class="footer_column">
+						<div class="footer_column__title">Cвязаться с нами</div>
+						<ul class="contact__list">
+							<li class="location__footer"><i class="site__icons location__footer__icons footer__i"></i>  ул. Яблочкова, 26/28, Саратов, Саратовская обл.</li>
+							<li class="telephone__footer"><i class="site__icons phone__icons footer__i"></i>8 (845) 298-86-48</li>
+							<li class="email__footer"><i class="site__icons email__icons footer__i"></i>eurometers64@gmail.com</li>
+							<li class="time__footer"><i class="site__icons time__icons footer__i"></i>Пн - Сб, с 08 утра до 06 вечера</li>
+						</ul>
+					</div>
+					<div class="footer_column">
+						<div class="footer_column__title">Популярные места</div>
+						<ul class="popular__places__list">
+							<li class="footer__bottom__list__item"><a href="index.html">Главная</a></li>
+							<li class="footer__bottom__list__item"><a href="featured__listings.html">Рекомендуемые списки</a></li>
+							<li class="footer__bottom__list__item"><a href="about__us.html">О нас</a></li>
+							<li class="footer__bottom__list__item"><a href="pages.html">Страницы</a></li>
+							<li class="footer__bottom__list__item"><a href="blog.html">Блог</a></li>
+							<li class="footer__bottom__list__item"><a href="contact.html">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="footer_column">
+						<div class="footer_column__title">Новостная рассылка</div>
+						<div class="footer__subscribe__text">Подпишитесь на свою электронную почту, чтобы получать последние новости и новое предложение, а также скидку</div>
+						<form action="mail.php" method="POST" class="footer__form__newsletter">
+						<input type="email" name="email" class="email__address__input" placeholder="Адрес электронной почты...">
+						<a href="#"><div class="send__button"><i class="site__icons send__icons footer__i"><input type="submit" value="" style="position: absolute;width: 40px;height: 40px;left: 1475px;opacity: 0;top: 6278px;cursor: pointer;
+"></input></i></div></a>
+					</form>
+					</div>
+				</div>
+				<div class="footer__bottom__container">
+					<div class="copyright">Авторское право ©2023 Все права защищены</div>
+				</div>
+			</div>
+		</footer>
+		
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+        <script type="text/javascript">
+
+            google.maps.event.addDomListener(window, 'load', init);
+        
+            function init() {
+
+                var mapOptions = {
+
+                    zoom: 16,
+
+                    center: new google.maps.LatLng(51.533075, 46.025714), 
+
+
+                    styles: [{"featureType":"all","elementType":"labels.text","stylers":[{"color":"#878787"}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f9f5ed"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"color":"#f5f5f5"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#c9c9c9"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#aee0f4"}]}]
+                };
+
+                var mapElement = document.getElementById('map');
+
+                var map = new google.maps.Map(mapElement, mapOptions);
+
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(51.533075, 46.025714),
+                    map: map,
+                    title: 'Snazzy!'
+                });
+            }
+        </script>
+	
+	<script src="./js/index__script.js"></script>
+	<script src="js/pages.js"></script>
+
+</body>
+</html>
