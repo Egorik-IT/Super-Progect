@@ -554,7 +554,7 @@ label{
 .picture__fetured__first, .picture__fetured__second, .picture__fetured__third,
 .picture__fetured__fourth, .picture__fetured__fifth, .picture__fetured__sixth,
 .picture__fetured__seventh, .picture__fetured__eighth, .picture__fetured__ninth,
-.picture__fetured__tenth, .picture__fetured__eleventh, .picture__fetured__twelfth {
+.picture__fetured__tenth, .picture__fetured__eleventh, .picture__fetured__twelfth, .picture__fetured__thirteen {
 	padding: 20px;
 	height: 250px;
   }
@@ -575,23 +575,23 @@ label{
 	background-size: cover;
 } 
 .picture__fetured__fifth {
-	background: url(../img/feature/5.jpg) center no-repeat;
+	background: url(../img/feature/8.jpg) center no-repeat;
 	background-size: cover;
 } 
 .picture__fetured__sixth {
-	background: url(../img/feature/6.jpg) center no-repeat;
+	background: url(../img/feature/11.jpg) center no-repeat;
 	background-size: cover;
 }
 .picture__fetured__seventh {
-	background: url(../img/feature/7.jpg) top center no-repeat;
+	background: url(../img/feature/7.jpg) center no-repeat;
 	background-size: cover;
 } 
 .picture__fetured__eighth {
-	background: url(../img/feature/8.jpg) top center no-repeat;
+	background: url(../img/single-list-slider/СЕРБИЯ_3.jpg) center no-repeat;
 	background-size: cover;
 } 
 .picture__fetured__ninth {
-	background: url(../img/feature/9.jpg) top center no-repeat;
+	background: url(../img/single-list-slider/ГРУЗИЯ\ 9.jpg) center no-repeat;
 	background-size: cover;
 }
 .picture__fetured__tenth {
@@ -599,11 +599,15 @@ label{
 	background-size: cover;
 } 
 .picture__fetured__eleventh {
-	background: url(../img/feature/11.jpg) top center no-repeat;
+	background: url(../img/single-list-slider/ТАИЛАНД_4.jpg) top center no-repeat;
 	background-size: cover;
 } 
 .picture__fetured__twelfth {
 	background: url(../img/feature/12.jpg) top center no-repeat;
+	background-size: cover;
+}
+.picture__fetured__thirteen {
+	background: url(../img/single-list-slider/СЕРБИЯ_2.jpg) center no-repeat;
 	background-size: cover;
 }
 .futured__text__container{
@@ -1497,9 +1501,32 @@ label{
 
 /*fourth section media*/
 @media (max-width: 1120px) {
-	.fetured__listings__grid__container__second {
-		grid-template-columns: 1fr 1fr;
-	}
+.fetured__listings__grid__container__second {
+	grid-template-columns: 1fr 1fr;
+}
+.filter__content {
+	flex-direction: column;
+	justify-content: start;
+}
+.filter__forma {
+    max-width: 446px;
+    margin: 0px auto 100px auto;
+	padding-right: 58px;
+}
+.price__container, .area__container {
+    margin-left: 0px;
+	max-width: 180px;
+}
+.price__input__content, .area__input__content {
+    display: block;
+}
+.input__price__container:last-child, .input__area__container:last-child {
+    margin-left: 0px;
+	margin-top: 10px;
+}
+.input__country__container input {
+    width: 320px;
+}
 }
 @media (max-width: 750px) {
 	.fetured__listings__grid__container__second {
@@ -1508,6 +1535,11 @@ label{
 	}
 	.site__navigation__featured__listings {
 		max-width: 600px;
+	}
+}
+@media (max-width: 470px) {
+	.input__country__container input {
+		width: 250px;
 	}
 }
 @media (max-width: 400px) {
@@ -1526,6 +1558,25 @@ label{
 	}
 	.featured__listings__title {
 		font-size: 25px;
+	}
+	.input__country__container input {
+		width: 200px;
+	}
+}
+@media (max-width: 350px) {
+	.sale__rent__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0 auto;
+		max-width: max-content;
+	}
+	.buy__filter + .rent__filter {
+		 margin-left: 0px; 
+		 margin-top: 10px; 
+	}
+	.input__country__container input {
+		width: 170px;
 	}
 }
 /*fourth section media*/
@@ -1885,11 +1936,65 @@ label{
 	padding: 70px 30px;
 	border-top: none;
 }
-.photo__product__container {
+.photo__product__pages__dubai__container {
 	background: url(../img/feature/7.jpg) no-repeat top center;
 	background-size: cover;
 	padding: 30px;
 	height: 400px;
+}
+.photo__product__pages__turzia__container {
+	background: url(../img/single-list-slider/ТУРЦИЯ_4.jpg) no-repeat top center;
+	background-size: cover;
+	padding: 30px;
+	height: 400px;
+}
+.photo__product__pages__bali__container {
+	background: url(../img/single-list-slider/БАЛИ_1.jpg) no-repeat top center;
+	background-size: cover;
+	padding: 30px;
+	height: 400px;
+}
+.photo__product__pages__gruzia__container {
+	background: url(../img/single-list-slider/ГРУЗИЯ_4.jpg) no-repeat center;
+	background-size: cover;
+	padding: 30px;
+	height: 400px;
+}
+.photo__product__pages__serbia__container {
+	background: url(../img/single-list-slider/СЕРБИЯ_1.jpg) no-repeat center;
+	background-size: cover;
+	padding: 30px;
+	height: 400px;
+}
+.photo__product__pages__tailand__container {
+	background: url(../img/single-list-slider/ТАИЛАНД_1.jpg) no-repeat center;
+	background-size: cover;
+	padding: 30px;
+	height: 400px;
+}
+.photo__product__pages__turzia__chernomorsk__container {
+	background: url(../img/single-list-slider/ТУРЦИЯ_\ 1_1.jpg) no-repeat center;
+	background-size: cover;
+	padding: 30px;
+	height: 400px;
+}
+.photo__product__pages__turzia__stambul__container {
+	background: url(../img/feature/10.jpg) no-repeat center;
+	background-size: cover;
+	padding: 30px;
+	height: 400px;
+}
+.photo__product__pages__dubai_2__container {
+	background: url(../img/feature/10.jpg) no-repeat center;
+	background-size: cover;
+	padding: 30px;
+	height: 400px;
+}
+.photo__hover {
+	transition: 1s;
+}
+.photo__hover:hover {
+	transform: scale(1.2);
 }
 .photo__bur {
 	margin-top: 10px;
@@ -1899,20 +2004,145 @@ label{
 }
 .photo__bur__item {
 	width: 100%;
-	cursor: pointer;
+	overflow: hidden;
+	border: 3px solid #ffffff;
+	transition: 0.4s;
 }
-.photo__product__item__first {
+.photo__bur__item:hover {
+	border: 3px solid #30caa0;
+}
+.photo__product__pages__dubai__item__first {
 	background: url(../img/single-list-slider/3.jpg) no-repeat top center;
 	background-size: cover;
 	height: 220px;
 }
-.photo__product__item__second {
+.photo__product__pages__dubai__item__second {
 	background: url(../img/single-list-slider/4.jpg) no-repeat top center;
 	background-size: cover;
 	height: 220px;
 }
-.photo__product__item__thrid {
+.photo__product__pages__dubai__item__thrid {
 	background: url(../img/single-list-slider/5.jpg) no-repeat top center;
+	background-size: cover;
+	height: 220px;
+}
+.photo__product__pages__turzia__item__first {
+	background: url(../img/single-list-slider/ТУРЦИЯ_1.jpg) no-repeat top center;
+	background-size: cover;
+	height: 220px;
+}
+.photo__product__pages__turzia__item__second {
+	background: url(../img/single-list-slider/ТУРЦИЯ_2.jpg) no-repeat top center;
+	background-size: cover;
+	height: 220px;
+}
+.photo__product__pages__turzia__item__thrid {
+	background: url(../img/single-list-slider/ТУРЦИЯ_3.jpg) no-repeat top center;
+	background-size: cover;
+	height: 220px;
+}
+.photo__product__pages__bali__item__first {
+	background: url(../img/single-list-slider/БАЛИ_2.jpg) no-repeat top center;
+	background-size: cover;
+	height: 220px;
+}
+.photo__product__pages__bali__item__second {
+	background: url(../img/single-list-slider/БАЛИ_3.jpg) no-repeat top center;
+	background-size: cover;
+	height: 220px;
+}
+.photo__product__pages__bali__item__thrid {
+	background: url(../img/single-list-slider/БАЛИ_4.jpg) no-repeat top center;
+	background-size: cover;
+	height: 220px;
+}
+.photo__product__pages__gruzia__item__first {
+	background: url(../img/single-list-slider/ГРУЗИЯ_1.jpg) no-repeat top center;
+	background-size: cover;
+	height: 220px;
+}
+.photo__product__pages__gruzia__item__second {
+	background: url(../img/single-list-slider/ГРУЗИЯ_2.jpg) no-repeat top center;
+	background-size: cover;
+	height: 220px;
+}
+.photo__product__pages__gruzia__item__thrid {
+	background: url(../img/single-list-slider/ГРУЗИЯ_3.jpg) no-repeat top center;
+	background-size: cover;
+	height: 220px;
+}
+.photo__product__pages__serbia__item__first {
+	background: url(../img/single-list-slider/СЕРБИЯ_2.jpg) no-repeat top center;
+	background-size: cover;
+	height: 220px;
+}
+.photo__product__pages__serbia__item__second {
+	background: url(../img/single-list-slider/СЕРБИЯ_3.jpg) no-repeat top center;
+	background-size: cover;
+	height: 220px;
+}
+.photo__product__pages__serbia__item__thrid {
+	background: url(../img/single-list-slider/СЕРБИЯ_4.jpg) no-repeat top center;
+	background-size: cover;
+	height: 220px;
+}
+.photo__product__pages__tailand__item__first {
+	background: url(../img/single-list-slider/ТАИЛАНД_2.jpg) no-repeat top center;
+	background-size: cover;
+	height: 220px;
+}
+.photo__product__pages__tailand__item__second {
+	background: url(../img/single-list-slider/ТАИЛАНД_3.jpg) no-repeat top center;
+	background-size: cover;
+	height: 220px;
+}
+.photo__product__pages__tailand__item__thrid {
+	background: url(../img/single-list-slider/ТАИЛАНД_4.jpg) no-repeat top center;
+	background-size: cover;
+	height: 220px;
+}
+.photo__product__pages__turzia__chernomorsk__item__first {
+	background: url(../img/single-list-slider/ТУРЦИЯ_\ 2_2.jpg) no-repeat top center;
+	background-size: cover;
+	height: 220px;
+}
+.photo__product__pages__turzia__chernomorsk__item__second {
+	background: url(../img/single-list-slider/ТУРЦИЯ_\ 3_3.jpg) no-repeat top center;
+	background-size: cover;
+	height: 220px;
+}
+.photo__product__pages__turzia__chernomorsk__item__thrid {
+	background: url(../img/single-list-slider/ТУРЦИЯ_4_4.jpg) no-repeat top center;
+	background-size: cover;
+	height: 220px;
+}
+.photo__product__pages__turzia__stambul__item__first {
+	background: url(../img/feature/13.jpg) no-repeat top center;
+	background-size: cover;
+	height: 220px;
+}
+.photo__product__pages__turzia__stambul__item__second {
+	background: url(../img/feature/14.jpg) no-repeat top center;
+	background-size: cover;
+	height: 220px;
+}
+.photo__product__pages__turzia__stambul__item__thrid {
+	background: url(../img/feature/15.jpg) no-repeat top center;
+	background-size: cover;
+	height: 220px;
+}
+.photo__product__pages__dubai_2__item__first {
+	background: url(../img/feature/13.jpg) no-repeat top center;
+	background-size: cover;
+	height: 220px;
+}
+.photo__product__pages__dubai_2__item__second {
+	background: url(../img/feature/14.jpg) no-repeat top center;
+	background-size: cover;
+	height: 220px;
+}
+.photo__product__pages__dubai_2__item__thrid {
+	background: url(../img/feature/15.jpg) no-repeat top center;
 	background-size: cover;
 	height: 220px;
 }
