@@ -1,0 +1,20 @@
+.feedback-card {
+    border-radius: 10px;
+    transition: all .15s ease-in-out;
+}
+
+.feedback-card:hover {
+    transform: scale(1.01);
+    background-color: #30caa0 !important;
+}
+
+.feedback-card .card-header {
+    background-color: #30caa0 !important;
+    color: white;
+    border-radius: 10px 10px 0px 0px !important;
+}
+
+.feedback-card .card-footer {
+    background-color: white !important;
+    border-radius: 0px 0px 10px 10px !important;
+}

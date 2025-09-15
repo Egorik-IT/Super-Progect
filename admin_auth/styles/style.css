@@ -1,0 +1,15 @@
+.admin {
+    min-height: 100%;
+    min-height: 100vh;
+  
+    display: flex;
+    align-items: center;
+}
+
+.admin-container {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.admin-auth-form {
+    border-radius: 10px;
+}
